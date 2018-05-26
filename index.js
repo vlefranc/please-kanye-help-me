@@ -1,7 +1,7 @@
-// Q1. Create a variable called kanye and assign it the string 'please kanye, help me'
+// Q1. Create a variable called `kanye` and assign it the string 'please kanye, help me'
 
-// Q2. Use the variable `kanye` to create a new variable called `genious` that is assigned the string "Is Kanye West a musical genius?"
-const kanye = 'Kanye West';
+// Q2. Use the variable `artist` to create a new variable called `genious` that is assigned the string "Is Kanye West a musical genius?"
+const artist = 'Kanye West';
 
 // Q3  Make an object called `family` and give it the following properties:
 // family has been `married` on 2014 (Number)
@@ -50,7 +50,7 @@ console.log(duplicate(['let', 'the', 'suicide', 'doors', 'up']));
 // ❯ ['let', 'the', 'suicide', 'doors', 'up', 'let', 'the', 'suicide', 'doors', 'up']
 
 
-// Q10. Refactor the current ES6-style function `heartless` in ES6-style.
+// Q10. Refactor the current ES5-style function `heartless` in ES6-style.
 
 const heartless = function (names) {
   const results = [];
@@ -70,13 +70,13 @@ console.log(heartless(chorus));
 // Q11. Related to the https://genius.com/search?q=kanye%20west link
 // What's the query selector to get all lyrics cards.
 
-// Q12. Related to  https://genius.com/search?q=kanye%20west link
-// List all api requests urls and http action verbs.
+// Q12. Related to https://genius.com/search?q=kanye%20west link
+// List all api requests urls with their http action verbs.
 
 // Q13. Related to the following api call "curl 'https://genius.com/api/videos?page=1&song_id=70324' --compressed" requested by https://genius.com/Kanye-west-mercy-lyrics
 // Could you describe and explain the response?
 
-// Q14. Related to the Twitter component to display a badge with the given user name
+// Q14. Related to the (React) Twitter component to display a badge with the given user name
 <Twitter username='kanyewest'>
   {(user) => user === null
     ? <Loading />
