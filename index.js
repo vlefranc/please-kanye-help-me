@@ -1,12 +1,23 @@
 // Q1. Create a variable called `kanye` and assign it the string 'please kanye, help me'
 
+var Kanye = 'please kanye, help me';
+
 // Q2. Use the variable `artist` to create a new variable called `genious` that is assigned the string "Is Kanye West a musical genius?"
 const artist = 'Kanye West';
+var genious = artist + ' a musical genius';
 
 // Q3  Make an object called `family` and give it the following properties:
 // family has been `married` on 2014 (Number)
 // family is not presidentOfTheUnitedStates (boolean)
 // family has `children` called North, Saint and Chicago (array of strings)
+
+const family = {
+  'married' : 2014,
+  'presidentOfTheUnitedStates' : false,
+  'children':['North', 'Saint', 'Chicago']
+
+};
+
 
 // Q4. Change the `brand` shoes to "adidas" using dot notation
 const shoes = {
@@ -14,10 +25,14 @@ const shoes = {
   'brand': 'nike'
 };
 
+shoes.brand = 'adidas';
+
 // Q5. Change the `model` yeezy to "Super Moon Yellow" using square bracket notation
 const yeezy = {
   'model': '350'
 };
+
+yeezy['model'] = 'Super Moon Yellow';
 
 // Q6. Create an object call "discography"
 // The key should be the album name and the value the release year
