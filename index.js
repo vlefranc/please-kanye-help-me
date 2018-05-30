@@ -43,11 +43,27 @@ yeezy['model'] = 'Super Moon Yellow';
 // * 808s & Heartbreak (2008)
 // * My Beautiful Dark Twisted Fantasy (2010)
 
+const discography = {
+  'The College Dropout' : 2004,
+  'Late Registration' : 2005,
+  'Graduation' : 2007,
+  '808s & Heartbreak' : 2008,
+  'My Beautiful Dark Twisted Fantasy' : 2010
+};
+
+
 // Q7. Return a new array from `stronger` with all item in uppercase
 const stronger = ['Work it', 'make it', 'do it', 'makes us', 'Harder', 'better', 'faster', 'stronger'];
 
+
+var STRONGER = new Array(stronger.length);
+
+  for (var i = 0; i < stronger.length; i++) { 
+
+    STRONGER[i] = stronger[i].toUpperCase();
+  };
+
 // Q8. Using this array do the following
-const friends = ['jayz', 'rihanna', 'kidcudi'];
 
 // 1. add 'drake' to the end of `friends` array
 
@@ -59,9 +75,52 @@ const friends = ['jayz', 'rihanna', 'kidcudi'];
 
 // 5. leave 'kidcudi' in the array but put a copy of him on a variable called thirdFriend
 
+const friends = ['jayz', 'rihanna', 'kidcudi'];
+
+friends.push('drake');
+
+function removeAt(array, index) {
+  var ret = array[index];
+  for (var i = index + 1; i < array.length; ++i) {
+      array[i - 1] = array[i];
+  }
+  array.length = array.length - 1;
+  return ret;
+}
+
+function getIndex(array, item){
+  var index = -1;
+  for (var i = 0; i < array.length; ++i) {
+    if(array[i]==item)
+    {
+      index=i;
+    }
+  }
+  return index;
+}
+var firstFriend = removeAt(friends,getIndex(friends,'jayz'));
+
+friends.unshift('pusha-t');
+
+var secondFriend = removeAt(friends,getIndex(friends,'rihanna'));
+
 
 // Q9. Write the function `duplicate` that return the expected result
-console.log(duplicate(['let', 'the', 'suicide', 'doors', 'up']));
+
+function duplicate(array){
+  var len = array.length;
+  var res = new Array(len*2);
+  for (var i =0; i<len;i++)
+  {
+    res[i]=array[i];
+    res[i+len]=array[i];
+  }
+  return res;
+}
+
+const list = ['let', 'the', 'suicide', 'doors', 'up'];
+
+console.log(duplicate(list));
 // ❯ ['let', 'the', 'suicide', 'doors', 'up', 'let', 'the', 'suicide', 'doors', 'up']
 
 
